@@ -22,9 +22,10 @@ application标签中删除allowBackup属性，这样此app就可以进行沙盒�
 
 ### 3>更改属性
 **java -jar AXMLEditor.jar -attr -m [标签名] [标签唯一标识] [属性名] [属性值] [输入xml] [输出xml]**.        
-**java -jar AXMLEditor.jar -attr -m manifest package(随便加个字符串占位，才能修改成功) versionCode 0 AndroidManifest.xml AndroidManifest_out.xml**
 
-案例：java -jar AXMLEditor.jar -attr -m application package debuggable true AndroidManifest.xml AndroidManifest_out.xml
+案例：java -jar AXMLEditor.jar -attr -m application package debuggable true AndroidManifest.xml AndroidManifest_out.xml       
+
+java -jar AXMLEditor.jar -attr -m manifest package(任意？) versionCode 0 AndroidManifest.xml AndroidManifest_out.xml
 
 application的标签中修改android:debuggable="true"属性，让程序处于可调式状态
 
