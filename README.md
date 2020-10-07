@@ -21,7 +21,8 @@ application的标签中插入android:debuggable="true"属性，让程序处于�
 application标签中删除allowBackup属性，这样此app就可以进行沙盒数据备份
 
 ### 3>更改属性
-**java -jar AXMLEditor.jar -attr -m [标签名] [标签唯一标识] [属性名] [属性值] [输入xml] [输出xml]**
+**java -jar AXMLEditor.jar -attr -m [标签名] [标签唯一标识] [属性名] [属性值] [输入xml] [输出xml]**.        
+**java -jar AXMLEditor.jar -attr -m manifest package(随便加个字符串占位，才能修改成功) versionCode 0 AndroidManifest.xml AndroidManifest_out.xml**
 
 案例：java -jar AXMLEditor.jar -attr -m application package debuggable true AndroidManifest.xml AndroidManifest_out.xml
 
